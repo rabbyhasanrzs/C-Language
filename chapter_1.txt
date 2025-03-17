@@ -1,0 +1,145 @@
+Chapter one : Table of Contend
+*** Variables.
+*** KeyWords.
+*** Constants.
+*** Comments.
+*** Structure.
+*** Compilation.
+
+
+--------------------------->>>>>>>>>>>>>>
+### Variables : Variable is the name of a memory location whice stores some data.
+
+### Rules of Variable:
+    a) Variables are case sensitive.
+         int Rabby=23;
+         int rabby=23;
+         *** Twice variable are not same
+
+    b) 1st Character is alphabet or '_' . 
+         int 1Rabby = 23; // Gives an error.
+         int _Rabby= 23; // Run properly.
+
+    c) No comma/blank space.
+        int ,Rabby=518; // Gives an error.
+
+    d) No other symbol other than '_' .
+        int @Rabby = 518; // Gives an Error
+
+### Variables Value are not fixed it can be changable . We can update it easylly.
+    int Rabby = 518;
+    Rabby = 23;
+
+### Tips : All time You tried to set the variable name is meaningfull. Its is a good practice.
+
+
+
+--------------------------------->>>>>>>>>>>>>>>
+Variables Data Type : 
+        Data type                       Size in bytes
+        1. Char or signed char                 1
+        2. Unsigned char                       1 
+        3. int or signed int                   2
+        4. Unsigned int                        2
+        5. Short int or Unsigned short int     2
+        6. signed short int                    2
+        7. Long int or signed int              4
+        8. Unsigned long int                   4
+        9. float                               4
+        10. double                             8
+        11. Long double                       10
+
+
+
+------------------------------->>>>>>>>>>>>>>>>>>>
+
+### KeyWords : Reserved words that have special meaning to yhe compiler . There is 32 keyword in C.
+     
+     auto,double,int ,struct,break,else,long,switch,case, enum,register,typedef,char,extern,return,union,continue,for,signed,void,do,if,static,while,default,goto,sizeof,volatile,const,float,short,unsigned
+
+
+
+------------------------------>>>>>>>>>>>>>>>>>>>>>
+
+
+### Constants : Values that don't change(fixed).We can use Cons keyword.( const int Rabby = 518;)
+
+                -->> Integer Constant 
+                |      (1,2,3,0,-1,-2)
+                |
+    Types :     -->> Real Constants
+                |      (1.0,2.0,3.14,-2.4)
+                |
+                -->> Character Constants
+                      ('a','b','A','#','&')
+
+
+
+
+
+------------------------------>>>>>>>>>>>>>>>>>>>>>
+
+### Comments : Lines that not part of program.
+*** Types : 1) single line comments.
+               Express with // ......
+            2) Multiple Line comments.
+               Express with /* ...... */
+
+------------------------------>>>>>>>>>>>>>>>>>>>>>
+
+
+*** Structure: 
+ 
+#include<stdio.h>   // Preprocessor Directive
+int main(){
+    printf("Rabby Hasan RZSIAN");  // ; means statement terminator .work like full stop
+    return 0;
+}
+
+** All the C programe start for the Execuiton with the main function.
+** And the Execution process held in the line by line in the programe.
+** All the programe are case sensetive .
+   like :
+          INT MAIN () and int main() are not same .
+
+
+
+------------------------------>>>>>>>>>>>>>>>>>>>>>
+
+Output : For printing something sin c language . we can take helps from a function . Generally it is a library function { printf()}.
+
+
+        printf(" Hello Esrat ");
+        // new line 
+        printf(" Hoew feel Today \n "); // Here \n is a Escape sequencce
+
+
+*** For printing C code 3 case are arrise :
+        1) integers:
+           printf(" age is %d ",age);
+        2) real numbers: 
+           printf(" age is %f ",pi);
+        3) characters:
+           printf(" Star looks like this %c ",star);
+
+        *** Here %i,%d,%c,%f etc are known as the format Specifiers.
+------------------------------>>>>>>>>>>>>>>>>>>>>>
+
+Input : take input or scan somethings from user something in c language . we can take helps from a function . Generally it is a library function { scanf()}.
+
+        Syntax :  scanf("%d",&age);  // Here & is a pointer notetion.
+
+        *** Here %i,%d,%c,%f etc are known as the format Specifiers.
+
+------------------------------>>>>>>>>>>>>>>>>>>>>>
+------------------------------>>>>>>>>>>>>>>>>>>>>>
+### First Chapter Projects: 
+      #include<stdio.h>
+      int main(){
+        int num1,num2;
+        printf("Enter Your first and second number = ");
+        scanf("%d %d",&num1,&num2);
+        printf("Number1 is = %d and Number2 is = %d",num1,num2);
+        return 0;
+      }
+------------------------------>>>>>>>>>>>>>>>>>>>>>
